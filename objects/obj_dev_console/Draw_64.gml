@@ -1,9 +1,10 @@
-draw_text(8, 8, y)
+var st = DrawSet([c_black, 0.3]);
 
-var st = draw_set([c_black, 0.3]);
+DevConsoleBackgroundDraw()
 
-var width = display_get_gui_width()
+DrawSet([c_white, 1]);
 
-draw_rectangle(0, 0, width, y, false);
+DevConsoleLogDraw()
+DevConsoleCommandDraw()
 
-draw_set(st);
+DrawSet(st);

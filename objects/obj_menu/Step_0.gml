@@ -8,7 +8,7 @@ for (var i = 0; i < array_length(menu_options); i ++) {
 	var t_width = string_width(menu_options[i].text) / 2;
 	var t_height = string_height(menu_options[i].text) / 2;
 	
-	if (key_check_pressed("Primary Action") &&
+	if (KeyCheckPressed("Primary Action") &&
 		point_in_rectangle(
 			mouse_x, mouse_y,
 			draw_x - t_width,
@@ -17,6 +17,6 @@ for (var i = 0; i < array_length(menu_options); i ++) {
 			draw_y + t_height
 		)
 	) {
-		menu_options[i].action()
+		menu_options[i].action();
 	}
 }

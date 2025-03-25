@@ -1,6 +1,6 @@
 menu_options = [
-	{ text : "Host",	action : show_message },
-	{ text : "Join",	action : show_message },
-	{ text : "Options",	action : room_goto,	option : rm_options },
-	{ text : "Exit",	action : game_end,	option : 0 }
+	{ text : "Host",	action : NetStartHost },
+	{ text : "Join",	action : NetStartClient },
+	{ text : "Options",	action : show_message },
+	{ text : "Exit",	action : game_end }
 ]

@@ -1,8 +1,8 @@
 [X] Menu
 
  -- Dev console
-[ ] Drop down
-[ ] Parse Commands
+[X] Drop down
+[X] Parse Commands
 
  -- Network v1
 [ ] Network Connection

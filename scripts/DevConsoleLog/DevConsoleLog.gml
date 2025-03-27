@@ -1,5 +1,9 @@
 function DevConsoleLog(str) {
 	
+	str = string(str);
+	
+	show_debug_message("> " + str)
+	
 	if (!instance_exists(obj_dev_console)) { return }
 	
 	array_push(obj_dev_console.console_log, str);

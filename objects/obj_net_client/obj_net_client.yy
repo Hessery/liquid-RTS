@@ -8,8 +8,9 @@
   "tags": [],
   "resourceType": "GMObject",
   "eventList": [
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":68,"eventType":7,"isDnD":false,},
     {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "overriddenProperties": [],
   "parentObjectId": null,

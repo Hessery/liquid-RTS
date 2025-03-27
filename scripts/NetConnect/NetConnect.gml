@@ -1,5 +1,5 @@
 function NetConnect() {
 	
-	ChatLogAdd(string(irandom(100)) + " joined.")
+	DevConsoleLog("Client connected")
 	
 }

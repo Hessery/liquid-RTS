@@ -1,1 +1,1 @@
-chatLog = []
+player_list = [{ name : global.username, ping : "0", socket : -1 }]

@@ -1,5 +1,14 @@
 function NetClientStart(){
 	
+	if (global.net_role != NET_ROLE_NONE) { 
+		DevConsoleLog("Unable to assign net role."); 
+		return;
+	}
+	if (global.net_object != -1) { 
+		DevConsoleLog("Unable to start server. Connection already present."); 
+		return;
+	}
+	
 	global.net_role = NET_ROLE_CLIENT;
 	global.menu_state = MENU_LOBBY;
 	

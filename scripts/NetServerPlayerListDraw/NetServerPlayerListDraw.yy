@@ -1,10 +1,10 @@
 {
   "parent": {
-    "name": "Chat Log",
-    "path": "folders/Functions/Networking/Chat Log.yy",
+    "name": "Server",
+    "path": "folders/Functions/Networking/Server.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ChatLogAdd",
+  "name": "NetServerPlayerListDraw",
   "tags": [],
   "resourceType": "GMScript",
   "isCompatibility": false,

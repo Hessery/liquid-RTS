@@ -1,1 +1,1 @@
-chat_log = []
+player_list = []

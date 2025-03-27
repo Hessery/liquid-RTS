@@ -1,9 +1,13 @@
-function NetStartServer() {
+function NetServerStart() {
 	
-	DevConsoleLog("Starting server...")
-	
-	global.net_role = NET_ROLE_HOST;
-	global.menu_state = MENU_LOBBY;
+	if (global.net_role != NET_ROLE_NONE) { 
+		DevConsoleLog("Unable to assign net role."); 
+		return;
+	}
+	if (global.net_object != -1) { 
+		DevConsoleLog("Unable to start server. Connection already present."); 
+		return;
+	}
 	
 	global.server = network_create_server(
 		network_socket_tcp,
@@ -11,12 +15,13 @@ function NetStartServer() {
 		8
 	)
 	
-	if (global.server = -1) { return }
+	if (global.server = -1) { 
+		DevConsoleLog("Unable to start server. Is the port already bound?")
+		return;
+	}
 	
-	global.player_count = 1;
-	global.username = string(irandom(99));
-	global.username_list = ds_map_create();
-	global.team = 0;
+	global.net_role = NET_ROLE_HOST;
+	global.menu_state = MENU_LOBBY;
 	
 	DevConsoleLog("Started server");
 	

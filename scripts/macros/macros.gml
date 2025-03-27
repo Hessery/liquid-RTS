@@ -16,10 +16,15 @@
 global.debug = false;
 global.key_map = ds_map_create()
 global.net_role = NET_ROLE_NONE;
+global.net_object = -1;
 global.menu_state = MENU_MAIN;
+global.colour = [ c_red, c_lime, c_blue, c_yellow, c_green, c_aqua ];
 
 // Key bindings
 KeySet("Primary Action",		mb_left);
 KeySet("Secondary Action",		mb_right);
 KeySet("Toggle Dev Console",	192);
 KeySet("Dev Console Commit",	vk_enter);
+
+// Default draw set values
+DrawSet([c_white, 1, fnt_default, fa_left, fa_top]);

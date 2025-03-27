@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "NetStartClientConnect",
+  "name": "NetClientStart",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Networking",
-    "path": "folders/Functions/Networking.yy",
+    "name": "Client",
+    "path": "folders/Functions/Networking/Client.yy",
   },
 }

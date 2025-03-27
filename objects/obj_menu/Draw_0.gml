@@ -1,33 +1,12 @@
-if (global.menu_state = MENU_MAIN) {
+// TODO: Refactor this. The page title should be in each draw event?
+var str = ""
 
-	var st = DrawSet([c_white, -1, -1, fa_middle, fa_middle]);
-
-	for (var i = 0; i < array_length(menu_options); i ++) {
-	
-		var text_height = string_height(menu_options[i].text)
-	
-		var draw_x = room_width / 2;
-		var draw_y = room_height / 1.6 + (i * text_height);
-	
-		var t_width = string_width(menu_options[i].text) / 2;
-		var t_height = string_height(menu_options[i].text) / 2;
-	
-		if (point_in_rectangle(
-			mouse_x, mouse_y,
-			draw_x - t_width,
-			draw_y - t_height,
-			draw_x + t_width,
-			draw_y + t_height
-		)) {
-			DrawSet([c_lime]);
-		}
-	
-		draw_text(draw_x, draw_y, menu_options[i].text);
-	
-		DrawSet([c_white]);
-	
-	}
-
-	DrawSet(st);
-
+switch (global.menu_state) {
+	case MENU_MAIN:		str = "Main Menu";	MenuMainDraw();		break;
+	case MENU_LOBBY:	str = "Lobby";		MenuLobbyDraw();	break;
+	case MENU_OPTIONS:	str = "Options";	MenuOptionsDraw();	break;
 }
+
+var st = DrawSet([c_black, 0.2, fnt_menu_title, fa_left, fa_bottom])
+draw_text(10, room_height, str);
+DrawSet(st)

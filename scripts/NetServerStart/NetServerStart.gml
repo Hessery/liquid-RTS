@@ -1,4 +1,9 @@
-if (global.net_role = NET_ROLE_HOST) {
+function NetStartServer() {
+	
+	DevConsoleLog("Starting server...")
+	
+	global.net_role = NET_ROLE_HOST;
+	global.menu_state = MENU_LOBBY;
 	
 	global.server = network_create_server(
 		network_socket_tcp,
@@ -15,13 +20,6 @@ if (global.net_role = NET_ROLE_HOST) {
 	
 	DevConsoleLog("Started server");
 	
-} else {
-	
-	global.socket = network_create_socket(network_socket_tcp);
-	var success = network_connect_async(
-		global.socket,
-		"localhost",
-		6969
-	)
+	global.net_object = instance_create_depth(0, 0, 0, obj_net_server);
 	
 }

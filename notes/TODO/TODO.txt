@@ -5,8 +5,8 @@
 [X] Parse Commands
 
  -- Network v1
-[ ] Network Connection
-[ ] Goto Lobby
+[X] Network Connection
+[X] Goto Lobby
 [ ] Get ping
 [ ] Goto game on agreed second
 

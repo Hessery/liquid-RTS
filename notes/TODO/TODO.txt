@@ -1,18 +1,19 @@
+ -- Menus
 [X] Menu
-
- -- Dev console
-[X] Drop down
-[X] Parse Commands
+[X] Dev Console Drop down
+[X] Dev Console Parse Commands
 
  -- Network v1
 [X] Network Connection
 [X] Goto Lobby
 [X] Sync player list
-[ ] Get ping
-[ ] Goto game on agreed second
+[X] Get ping
+[X] Goto game on agreed second
+[X] Remove windows window frame to stabilise framerate
 
  -- Lockstep Commands v1
-[ ] Command Setup
-[ ] Create object on command
+[X] Command Setup
+[X] Create object on command
 [ ] Set Rally on command
 [ ] Move on command
+[ ] Set random seed at game start

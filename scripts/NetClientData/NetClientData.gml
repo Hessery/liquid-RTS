@@ -6,6 +6,7 @@ function NetClientData() {
         case PACKET_PLAYER_LIST_UPDATE: NetClientDataPlayerList();  break;
         case PACKET_PING:               NetClientDataPing();        break;
         case PACKET_GAME_START:         NetClientDataGameStart();   break;
+        case PACKET_CMD:                NetClientDataCmd();         break;
     }
     
 }

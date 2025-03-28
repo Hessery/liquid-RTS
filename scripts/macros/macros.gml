@@ -1,5 +1,6 @@
 randomise();
 
+
 // Macros
 #macro NET_ROLE_HOST		    	0
 #macro NET_ROLE_CLIENT		    	1
@@ -19,6 +20,10 @@ randomise();
 #macro PACKET_PLAYER_LIST_UPDATE    1
 #macro PACKET_PING                  2
 #macro PACKET_GAME_START            3
+#macro PACKET_CMD                   4
+
+#macro CMD_CREATE                   0
+
 
 // Globals
 global.window_width = 960;
@@ -37,11 +42,19 @@ global.colour = [ c_red, c_lime, c_blue, c_yellow, c_green, c_aqua ];
 global.username = choose("Ted", "Frank", "Chuck", "Walt", "Otis", "Ned", 
 "Bart", "Cal");
 
+
 // Key bindings
 KeySet("Primary Action",		mb_left);
 KeySet("Secondary Action",		mb_right);
+
+KeySet("Pan Camera Up",         ord("W"));
+KeySet("Pan Camera Left",       ord("A"));
+KeySet("Pan Camera Down",       ord("S"));
+KeySet("Pan Camera Right",      ord("D"));
+
 KeySet("Toggle Dev Console",	192);
 KeySet("Dev Console Commit",	vk_enter);
+
 
 // Default draw set values
 DrawSet([c_white, 1, fnt_default, fa_left, fa_top]);

@@ -7,4 +7,5 @@ player_list = [ {
 
 start_second = -1;
 NetServerPingInit();
-SimFrameInit();
+SimInit();
+CmdInit();

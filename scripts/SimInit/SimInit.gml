@@ -1,4 +1,4 @@
-function SimFrameInit() {
+function SimInit() {
     
     last_second = current_second;
     frame_count = 0;
@@ -7,5 +7,7 @@ function SimFrameInit() {
     
     last_sim_frame = 0;
     sim_frame = 0;
+    
+    sim_tick = 0;
     
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "SimFrameInit",
+  "name": "SimInit",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -1,3 +1,4 @@
 NetClientServerAlive()
 SimFrameStep();
 SimGameStart();
+//SimTick();

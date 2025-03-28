@@ -21,7 +21,7 @@ function SimFrameStep() {
 		
 		last_milisecond = round(current_milisecond / 100);
 		sim_frame ++
-		//sim_frame_execute();
+		SimTick();
 		
 	}
 	

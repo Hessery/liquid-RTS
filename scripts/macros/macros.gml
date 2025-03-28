@@ -8,6 +8,7 @@ randomise();
 #macro MENU_MAIN			    	0
 #macro MENU_OPTIONS			    	1
 #macro MENU_LOBBY			    	2
+#macro MENU_NONE                    3
 
 #macro ASYNC_CONNECT		    	1
 #macro ASYNC_DISCONNECT		    	2
@@ -16,8 +17,13 @@ randomise();
 
 #macro PACKET_CONNECTION            0
 #macro PACKET_PLAYER_LIST_UPDATE    1
+#macro PACKET_PING                  2
+#macro PACKET_GAME_START            3
 
 // Globals
+global.window_width = 960;
+global.window_height = 540;
+global.fullscreen = false;
 global.debug = false;
 global.key_map = ds_map_create()
 global.net_role = NET_ROLE_NONE;
@@ -39,3 +45,15 @@ KeySet("Dev Console Commit",	vk_enter);
 
 // Default draw set values
 DrawSet([c_white, 1, fnt_default, fa_left, fa_top]);
+
+
+
+
+
+
+
+
+
+
+
+

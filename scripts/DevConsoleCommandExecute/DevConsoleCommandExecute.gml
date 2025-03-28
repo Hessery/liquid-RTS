@@ -7,6 +7,8 @@ function DevConsoleCommandExecute(cmd) {
 		case "menu":			MenuGoto(cmd_arr[1]);	break;
 		case "endConnection":	NetConnectionEnd();		break;
 		case "clientsLog":		NetClientsLog();		break;
+		case "gameStart":		NetGameStart();			break;
+		case "fullscreen":		FullscreenToggle();		break;
 		default:	output = "Unkwn: " + cmd;
 	}
 	

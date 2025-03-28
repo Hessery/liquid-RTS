@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "NetConnectionEnd",
+  "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Networking",
     "path": "folders/Functions/Networking.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "NetConnectionEnd",
-  "tags": [],
-  "resourceType": "GMScript",
-  "isCompatibility": false,
-  "isDnD": false,
 }

@@ -1,0 +1,3 @@
+SimFrameStep();
+NetServerClientsPing();
+SimGameStart();

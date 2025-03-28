@@ -1,5 +1,5 @@
 function NetConnect() {
 	
-	DevConsoleLog("Client connected")
+	DevConsoleLog("Client connected");
 	
 }

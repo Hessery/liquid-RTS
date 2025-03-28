@@ -1,5 +1,6 @@
 function NetConnectionEnd() {
     
+    room = rm_menu;
     global.menu_state = MENU_MAIN;
     global.net_role = NET_ROLE_NONE;
     

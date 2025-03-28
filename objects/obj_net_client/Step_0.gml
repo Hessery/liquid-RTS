@@ -1,0 +1,3 @@
+NetClientServerAlive()
+SimFrameStep();
+SimGameStart();

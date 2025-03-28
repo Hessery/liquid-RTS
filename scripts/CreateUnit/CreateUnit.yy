@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "CreateUnit",
+  "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Functions",
     "path": "folders/Functions.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "CreateUnit",
-  "tags": [],
-  "resourceType": "GMScript",
-  "isCompatibility": false,
-  "isDnD": false,
 }

@@ -1,15 +1,18 @@
 if (window_get_fullscreen()) { exit }
 
+var mx = window_mouse_get_x();
+var my = window_mouse_get_y();
+
 if (KeyCheckPressed("Primary Action") &&
-    mouse_x > display_width - height &&
-    mouse_y < height
+    mx > display_width - height &&
+    my < height
 ) { game_end() }
 
 if (
     KeyCheckPressed("Primary Action") &&
-    mouse_x < display_width &&
-    mouse_y < height &&
-    mouse_x > display_width - width
+    mx < display_width &&
+    my < height &&
+    mx > display_width - width
 ) {
     
     x_offset = window_mouse_get_x();

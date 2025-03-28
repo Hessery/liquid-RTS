@@ -20,11 +20,4 @@ function SimTick() {
         
     }
     
-    // Wipe the commands
-    // for (var i = 0; i < array_length(cmd_list); i ++) {
-        
-    //     if (cmd_list[i].exe_frame = sim_tick) { continue }
-        
-    // }
-    
 }

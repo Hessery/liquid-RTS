@@ -14,6 +14,8 @@
  -- Lockstep Commands v1
 [X] Command Setup
 [X] Create object on command
+[ ] Default bases
+[ ] Camera movement
 [ ] Set Rally on command
 [ ] Move on command
 [ ] Set random seed at game start

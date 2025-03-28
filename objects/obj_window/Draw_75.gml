@@ -1,9 +1,13 @@
-if (window_get_fullscreen()) { exit }
+if (global.fullscreen) { exit }
 
 var st = DrawSet([c_grey]);
 
+var mx = window_mouse_get_x()
+var my = window_mouse_get_y();
+
+
 draw_rectangle(display_width - width, 0, display_width, height, false);
-if (mouse_x > display_width - height && mouse_y < height) {
+if (mx > display_width - height && my < height) {
     DrawSet([c_red]);
     draw_rectangle(display_width - height, 0, display_width, height, false);
 }

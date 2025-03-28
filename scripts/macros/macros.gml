@@ -36,7 +36,8 @@ global.net_object = -1;
 global.server = -1;
 global.socket = -1;
 global.menu_state = MENU_MAIN;
-global.colour = [ c_red, c_lime, c_blue, c_yellow, c_green, c_aqua ];
+global.colour = [ c_red, c_lime, c_blue, c_yellow, c_green, c_aqua, 
+c_purple, c_fuchsia ];
 // TODO: Make this mandatory to choose first time, then make changeable 
 // in the options
 global.username = choose("Ted", "Frank", "Chuck", "Walt", "Otis", "Ned", 

@@ -4,8 +4,8 @@ function CreateUnit() {
     
     var json_str = json_stringify({ 
         cmd : CMD_CREATE, 
-        x : 0, 
-        y : 0, 
+        x : mouse_x, 
+        y : mouse_y, 
         obj : obj_test, 
         vars : { 
             colour : c_blue 

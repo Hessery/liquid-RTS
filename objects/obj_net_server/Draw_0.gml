@@ -1,4 +1,5 @@
 if (global.menu_state != MENU_NONE) { NetPlayerListDraw(32, 64) }
 
-draw_text(16, 80, sim_tick);
-draw_text(16, 100, cmd_list);
+for (var i = 0; i < array_length(player_list); i ++) {
+	draw_text(32, 128 + (i * 22), player_list[i])
+}

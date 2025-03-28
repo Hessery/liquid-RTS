@@ -8,7 +8,8 @@ function NetServerDataConnection() {
         name : username, 
         ping : "999", 
         first_ping : true,
-        socket : client 
+        socket : client,
+	    colour : irandom(7)
     });
     
     NetServerPlayerListSend();

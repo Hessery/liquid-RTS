@@ -1,5 +1,5 @@
 function NetServerExeTickCalc() {
     
-    return sim_tick + 10;
+    return sim_tick + 2;
     
 }

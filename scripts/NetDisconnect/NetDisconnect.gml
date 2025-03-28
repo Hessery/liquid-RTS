@@ -15,6 +15,8 @@ function NetDisconnect() {
         
     }
     
+    // If game running, tell everyone who dropped and when to delete their stuff
+    
     DevConsoleLog("Failed to find disconnecting client")
     
 }

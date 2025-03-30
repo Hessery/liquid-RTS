@@ -1,4 +1,4 @@
- -- Menus
+ -- Menus v1
 [X] Menu
 [X] Dev Console Drop down
 [X] Dev Console Parse Commands
@@ -13,9 +13,20 @@
 
  -- Lockstep Commands v1
 [X] Command Setup
+[X] Syncronised execution
+[X] First pass lockstep latentcy adjustment
+
+ -- Game Start v1
 [X] Create object on command
-[ ] Default bases
-[ ] Camera movement
+[X] Default bases
+[X] Camera movement
+[X] Choosing factions
+[X] Move camera to base
+[X] Set random seed at game start
+[ ] Base auto create
+
+ -- Gameplay v1
 [ ] Set Rally on command
 [ ] Move on command
-[ ] Set random seed at game start
+[ ] Build orders
+[ ] Fighting

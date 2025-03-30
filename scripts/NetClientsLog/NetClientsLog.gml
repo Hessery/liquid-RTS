@@ -4,13 +4,13 @@ function NetClientsLog() {
         DevConsoleLog("No server running");
         return
     }
-    if (global.net_object.object_index != obj_net_server) {
-        DevConsoleLog("Not a server")
-        return
-    }
+    // if (global.net_object.object_index != obj_net_server) {
+    //     DevConsoleLog("Not a server")
+    //     return
+    // }
     
-    for (var i = 0; i < array_length(global.net_object.clients); i ++) {
-        DevConsoleLog(global.net_object.clients[i]);
+    for (var i = 0; i < array_length(global.net_object.player_list); i ++) {
+        DevConsoleLog(global.net_object.player_list[i]);
     }
     
 }

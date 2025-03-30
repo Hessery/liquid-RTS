@@ -1,18 +1,21 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_test",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
-  "managed": true,
-  "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Game Objects",
+    "path": "folders/Objects/Game Objects.yy",
   },
-  "parentObjectId": null,
+  "resourceVersion": "1.0",
+  "name": "obj_terran_hq",
+  "tags": [],
+  "resourceType": "GMObject",
+  "eventList": [
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
+  "overriddenProperties": [],
+  "parentObjectId": {
+    "name": "obj_building",
+    "path": "objects/obj_building/obj_building.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

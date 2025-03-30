@@ -21,8 +21,13 @@ randomise();
 #macro PACKET_PING                  2
 #macro PACKET_GAME_START            3
 #macro PACKET_CMD                   4
+#macro PACKET_CHANGE_FACTION        5
 
 #macro CMD_CREATE                   0
+
+#macro FACTION_TERRAN               0
+#macro FACTION_TITAN                1
+#macro FACTION_TURTLE               2
 
 
 // Globals
@@ -33,6 +38,7 @@ global.debug = false;
 global.key_map = ds_map_create()
 global.net_role = NET_ROLE_NONE;
 global.net_object = -1;
+global.ip = "localhost";
 global.server = -1;
 global.socket = -1;
 global.menu_state = MENU_MAIN;

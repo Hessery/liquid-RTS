@@ -1,17 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_camera",
+  "name": "obj_game_object",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Contol",
-    "path": "folders/Objects/Contol.yy",
+    "name": "Game Objects",
+    "path": "folders/Objects/Game Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

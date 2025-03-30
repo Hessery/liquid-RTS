@@ -10,6 +10,9 @@ function DevConsoleCommandExecute(cmd) {
 		case "gameStart":		NetGameStart();			break;
 		case "fullscreen":		FullscreenToggle();		break;
 		case "create":			CreateUnit();			break;
+		case "faction":			SetFaction(cmd_arr);	break;
+		case "getSeed":			GetSeed();				break;
+		case "ip":				setIp(cmd_arr[1]);		break;
 		default:	output = "Unkwn: " + cmd;
 	}
 	

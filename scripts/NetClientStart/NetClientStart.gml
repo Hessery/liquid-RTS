@@ -15,7 +15,7 @@ function NetClientStart(){
 	global.socket = network_create_socket(network_socket_tcp);
 	var success = network_connect_async(
 		global.socket,
-		"localhost",
+		global.ip,
 		6969
 	)
 	

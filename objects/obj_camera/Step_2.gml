@@ -1,4 +1,4 @@
-var cam_speed = 8;
+var cam_speed = 10;
 var camera = view_camera;
 var cx = camera_get_view_x(camera);
 var cy = camera_get_view_y(camera);

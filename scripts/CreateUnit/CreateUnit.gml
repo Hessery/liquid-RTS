@@ -6,7 +6,7 @@ function CreateUnit() {
         cmd : CMD_CREATE, 
         x : mouse_x, 
         y : mouse_y, 
-        obj : obj_test, 
+        obj : obj_base_marker, 
         vars : { 
             colour : c_blue 
         } 

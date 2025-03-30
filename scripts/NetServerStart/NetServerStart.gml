@@ -12,7 +12,7 @@ function NetServerStart() {
 	global.server = network_create_server(
 		network_socket_tcp,
 		6969,
-		8
+		7
 	)
 	
 	if (global.server = -1) { 

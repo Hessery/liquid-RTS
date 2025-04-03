@@ -15,11 +15,19 @@ function SelectionAddRectangle(x1, y1, x2, y2) {
     //     list[| i].selected = true;
     // }
     
+    global.selected = []
+    
     for (var i = 0; i < ds_list_size(list); i ++) {
             
         var inst = ds_list_find_value(list, i);
         
         inst.selected = true;
+        
+        if (!array_contains(global.selected, inst)) { 
+            
+            array_push(global.selected, inst);
+            
+        };
         
     }
     

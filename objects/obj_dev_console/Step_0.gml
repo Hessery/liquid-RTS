@@ -15,3 +15,9 @@ if (open) {
 	y = max(y - toggle_speed, 0);
 	
 }
+
+if (keyboard_check(vk_lalt) && keyboard_check_pressed(vk_enter)) {
+	
+	FullscreenToggle();
+	
+}

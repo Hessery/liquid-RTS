@@ -28,7 +28,6 @@ function SimFrameStep() {
 		last_milisecond = round(current_milisecond / sim_frame_adjustment);
 		sim_frame ++
 		SimTick();
-		// DevConsoleLog(sim_frame)
 		
 	}
 	

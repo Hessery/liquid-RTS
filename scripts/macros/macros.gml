@@ -34,6 +34,7 @@ randomise();
 global.window_width = 960;
 global.window_height = 540;
 global.fullscreen = false;
+global.selected = [];
 global.debug = true;
 global.key_map = ds_map_create()
 global.net_role = NET_ROLE_NONE;

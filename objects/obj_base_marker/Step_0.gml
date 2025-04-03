@@ -17,14 +17,18 @@ CmdAdd({
     }
 })
 
-CmdAdd({
-    cmd : CMD_CREATE,
-    x : x + 64,
-    y : y,
-    obj : obj_terran_soldier,
-    vars : {
-        player : player
-    }
-})
+for (var i = 0; i < 3; i ++) {
+    
+    CmdAdd({
+        cmd : CMD_CREATE,
+        x : x + (i * 64),
+        y : y,
+        obj : obj_terran_soldier,
+        vars : {
+            player : player
+        }
+    })
+    
+}
 
 instance_destroy();

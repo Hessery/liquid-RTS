@@ -1,4 +1,7 @@
 event_inherited();
+
+icon = spr_icon_terran_soldier;
+
 hp = 10;
 max_hp = 10;
 

@@ -1,4 +1,4 @@
-selected = true;
+selected = false;
 is_building = true
 width = 32;
 height = 32;

@@ -1,6 +1,6 @@
 function CmdCreate(cmd) {
     
-    instance_create_depth(
+    global.net_id_list[cmd.vars.net_id] = instance_create_depth(
         cmd.x,
         cmd.y,
         0,

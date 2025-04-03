@@ -23,10 +23,22 @@
 [X] Choosing factions
 [X] Move camera to base
 [X] Set random seed at game start
-[ ] Base auto create
+[X] Base auto create
 
  -- Gameplay v1
-[ ] Set Rally on command
-[ ] Move on command
+[X] Selection
+[X] Create instance on command
+[X] Set rally on command
+[X] Terran soldier
+[X] Move on command
+
+ -- GUI v1
+[ ] Persistent sidebar
+[ ] Selection details
+[ ] Unit options
+[ ] Minimap
+
+ -- Gameplay v2
 [ ] Build orders
 [ ] Fighting
+

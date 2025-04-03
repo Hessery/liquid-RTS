@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cmds",
-    "path": "folders/Functions/Cmds.yy",
+    "name": "Commands",
+    "path": "folders/Functions/Cmds/Commands.yy",
   },
 }

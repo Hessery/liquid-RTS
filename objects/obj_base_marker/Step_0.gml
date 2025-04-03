@@ -1,10 +1,30 @@
+// Make sure youre the host
+if (global.net_role != NET_ROLE_HOST) { exit }
+
+// Make sure there is a player to claim this base
 if (player >= array_length(global.net_object.player_list)) {
     instance_destroy();
     exit;
 }
 
-// Make the base here
-var inst = instance_create_depth(x, y, 0, obj_terran_hq);
-inst.player = player;
+CmdAdd({
+    cmd : CMD_CREATE,
+    x : x,
+    y : y,
+    obj : obj_terran_hq,
+    vars : {
+        player : player
+    }
+})
+
+CmdAdd({
+    cmd : CMD_CREATE,
+    x : x + 64,
+    y : y,
+    obj : obj_terran_soldier,
+    vars : {
+        player : player
+    }
+})
 
 instance_destroy();

@@ -13,10 +13,13 @@ function SimTick() {
         if (cmd_list[i].exe_frame != sim_tick) { continue }
         
         switch (cmd_list[i].cmd) {
-            case CMD_CREATE:    CmdCreate(cmd_list[i]);    break;
+            case CMD_CREATE:    CmdCreate(cmd_list[i]);     break;
+            case CMD_SET_RALLY: CmdSetRally(cmd_list[i]);   break;
+            case CMD_MOVE:      CmdMove(cmd_list[i]);       break;
         }
         
         array_delete(cmd_list, i, 1);
+        i --
         
     }
     

@@ -7,6 +7,7 @@ player_list = [ {
 	colour : irandom(7),
 	faction : FACTION_TERRAN
 } ];
+next_id = 0;
 
 start_second = -1;
 NetServerPingInit();

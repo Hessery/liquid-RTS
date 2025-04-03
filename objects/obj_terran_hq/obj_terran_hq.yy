@@ -1,20 +1,21 @@
 {
-  "parent": {
-    "name": "Game Objects",
-    "path": "folders/Objects/Game Objects.yy",
-  },
+  "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_terran_hq",
-  "tags": [],
-  "resourceType": "GMObject",
   "eventList": [
-    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
+  "managed": true,
   "overriddenProperties": [],
+  "parent": {
+    "name": "Buildings",
+    "path": "folders/Objects/Game Objects/Terrans/Buildings.yy",
+  },
   "parentObjectId": {
-    "name": "obj_building",
-    "path": "objects/obj_building/obj_building.yy",
+    "name": "obj_game_object",
+    "path": "objects/obj_game_object/obj_game_object.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_terran_hq",
+    "path": "sprites/spr_terran_hq/spr_terran_hq.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

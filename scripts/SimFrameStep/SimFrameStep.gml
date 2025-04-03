@@ -9,7 +9,7 @@ function SimFrameStep() {
 		
 		last_second = current_second;
 		frame_count = 0;
-		//command_delay_floater --
+		// DevConsoleLog("Second tick")
 		
 	}
 	
@@ -17,11 +17,18 @@ function SimFrameStep() {
 	frame_count ++
 	
 	// Calculate if a sim frame has passed
-	if (round(current_milisecond / 100) != last_milisecond) {
+	// Sim frames per second adjustment: 
+	// 10  = ~60 sim frames per second
+	// 20  = ~50 sim frames per second
+	// 80  = ~15 sim frames per second
+	// 100 = ~10 sim frames per second
+	var sim_frame_adjustment = 10;
+	if (round(current_milisecond / sim_frame_adjustment) != last_milisecond) {
 		
-		last_milisecond = round(current_milisecond / 100);
+		last_milisecond = round(current_milisecond / sim_frame_adjustment);
 		sim_frame ++
 		SimTick();
+		// DevConsoleLog(sim_frame)
 		
 	}
 	

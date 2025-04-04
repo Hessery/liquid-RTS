@@ -32,6 +32,4 @@ for (var i = 0; i < array_length(global.selected); i ++) {
 var st = DrawSet([c_dkgrey]);
 draw_rectangle(gui_x, gui_y, width, height, false);
 
-draw_text(32, 32, selection_bar_y);
-
 DrawSet(st);

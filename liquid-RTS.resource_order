@@ -18,12 +18,12 @@
     {"name":"Units","order":1,"path":"folders/Objects/Game Objects/Terrans/Units.yy",},
     {"name":"GUI","order":3,"path":"folders/Objects/GUI.yy",},
     {"name":"Rooms","order":3,"path":"folders/Rooms.yy",},
+    {"name":"Sounds","order":8,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":6,"path":"folders/Sprites.yy",},
     {"name":"Icons","order":5,"path":"folders/Sprites/Icons.yy",},
     {"name":"Terrans","order":3,"path":"folders/Sprites/Terrans.yy",},
     {"name":"Buildings","order":1,"path":"folders/Sprites/Terrans/Buildings.yy",},
     {"name":"Units","order":2,"path":"folders/Sprites/Terrans/Units.yy",},
-    {"name":"Sounds","order":8,"path":"folders/Sounds.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"NetServerExeTickCalc","order":3,"path":"scripts/NetServerExeTickCalc/NetServerExeTickCalc.yy",},

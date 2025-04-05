@@ -1,3 +1,4 @@
+
 audio_group_load(audiogroup_bgm);
 
 bgm_set_list = [ 

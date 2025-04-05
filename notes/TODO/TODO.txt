@@ -32,9 +32,15 @@
 [X] Terran soldier
 [X] Move on command
 
+ -- Bgm v1
+[X] Bgm shuffled tracklist
+[X] Looped bgm
+[X] Fade in and out
+[X] Intermission
+
  -- GUI v1
-[ ] Persistent sidebar
-[ ] Selection details
+[X] Persistent sidebar
+[X] Selection details
 [ ] Unit options
 [ ] Minimap
 

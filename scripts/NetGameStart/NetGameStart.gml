@@ -14,6 +14,8 @@ function NetGameStart() {
     
     obj_dev_console.open = false;
     
+    audio_group_set_gain(audiogroup_bgm, 0, 2000);
+    
     DevConsoleLog("Starting game...");
     
 }

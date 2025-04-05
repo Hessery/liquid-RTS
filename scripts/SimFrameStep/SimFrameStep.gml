@@ -31,4 +31,17 @@ function SimFrameStep() {
 		
 	}
 	
+	if (sim_frame = 300 && room = rm_game) { 
+		
+		with (obj_bgm) {
+			
+			current_track += 1;
+			if (current_track > array_length(bgm_set_list)) { current_track = 0 }
+			audio_group_set_gain(audiogroup_bgm, 1, 5000);
+			audio_sound_set_track_position(bgm_playing, 0);
+			
+		}
+		
+	}
+	
 }

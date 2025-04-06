@@ -1,8 +1,10 @@
 function NetServerDataPing() {
     
     var client = async_load[? "id"];
-    // var ping = string(floor(((sim_frame - ping_start_frame) * 16.67)));
-    var ping = string(floor((sim_frame - ping_start_frame) / 2));
+    DevConsoleLog(string(sim_frame) + " " + string(ping_start_frame));
+    DevConsoleLog(string(current_milisecond) + " + (" + string(game_frame - ping_start_frame) + ") - 1 * 16.67")
+    // var ping = string((game_frame - ping_start_frame) * 16.67);
+    var ping = string(current_milisecond + (((game_frame - ping_start_frame) - 1) * 16.67));
     
     for (var i = 0; i < array_length(player_list); i ++) {
         

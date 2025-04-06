@@ -1,6 +1,19 @@
 // audio_sound_length()
 // audio_group_set_gain()
 
+if (!gain_set && audio_group_is_loaded(audiogroup_bgm)) { 
+	
+	gain_set = true;
+	audio_group_set_gain(
+		audiogroup_bgm, 
+		max(0.03, OptionsGet("BGM Gain", true)), 
+		0
+	); 
+	audio_play_sound(bgm_set_list[current_track], 1, false);
+	DevConsoleLog("Now playing: " + audio_get_name(bgm_set_list[current_track]));
+	
+}
+
 var track_length = audio_sound_length(bgm_playing)
 var track_pos = audio_sound_get_track_position(bgm_playing)
 var time_left = track_length - track_pos;
@@ -28,7 +41,7 @@ if (intermission_timer > 0) {
 	if (intermission_timer = 0) {
 		
 		 current_track += 1;
-		 if (current_track > array_length(bgm_set_list)) { current_track = 0 }
+		 if (current_track >= array_length(bgm_set_list)) { current_track = 0 }
 		 bgm_playing = audio_play_sound(bgm_set_list[current_track], 1, false);
 		 fading = false;
 		 audio_group_set_gain(audiogroup_bgm, 1, 5000);

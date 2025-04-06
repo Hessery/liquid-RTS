@@ -8,7 +8,7 @@ player_list = [ {
 	faction : FACTION_TERRAN
 } ];
 next_id = 0;
-
+game_frame = 0
 start_second = -1;
 NetServerPingInit();
 SimInit();

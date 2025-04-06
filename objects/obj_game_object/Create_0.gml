@@ -1,5 +1,6 @@
 selected = false;
-is_building = true
+is_building = false;;
+is_military = false;
 width = 32;
 height = 32;
 

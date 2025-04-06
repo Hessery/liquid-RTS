@@ -38,6 +38,12 @@
 [X] Fade in and out
 [X] Intermission
 
+-- Options v1
+[ ] Options save on toggle
+[ ] Options load on run
+[ ] Gain option
+[ ] Fullscreen option
+
  -- GUI v1
 [X] Persistent sidebar
 [X] Selection details
@@ -47,4 +53,6 @@
  -- Gameplay v2
 [ ] Build orders
 [ ] Fighting
+
+
 

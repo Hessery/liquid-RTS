@@ -18,6 +18,8 @@ draw_rectangle(gui_x, gui_y - selection_bar_y, width, gui_y, false);
 
 for (var i = 0; i < array_length(global.selected); i ++) {
     
+    ColourReplaceBegin(global.colour[global.selected[i].player])
+    
     draw_sprite_stretched(
         global.selected[i].icon,
         0,
@@ -25,6 +27,8 @@ for (var i = 0; i < array_length(global.selected); i ++) {
         gui_y - selection_bar_y + 8,
         32, 32
     );
+    
+    ColourReplaceEnd();
     
 }
 

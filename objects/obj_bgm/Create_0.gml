@@ -16,6 +16,7 @@ intermission_timer = 0;
 current_track = 0;
 fading = false;
 loops = 2;
-bgm_set_list = array_shuffle(bgm_set_list);
+gain_set = false;
 
-bgm_playing = audio_play_sound(bgm_set_list[current_track], 1, false);
+bgm_set_list = array_shuffle(bgm_set_list);
+bgm_playing = -2; 

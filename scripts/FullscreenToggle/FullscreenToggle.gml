@@ -12,4 +12,6 @@ function FullscreenToggle() {
         window_center()
     }
     
+    OptionsSet("Fullscreen", global.fullscreen, true);
+    
 }

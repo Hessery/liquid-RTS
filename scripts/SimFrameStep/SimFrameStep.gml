@@ -28,7 +28,6 @@ function SimFrameStep() {
 		last_milisecond = round(current_milisecond / sim_frame_adjustment);
 		sim_frame ++
 		SimTick();
-		
 	}
 	
 	if (sim_frame = 300 && room = rm_game) { 

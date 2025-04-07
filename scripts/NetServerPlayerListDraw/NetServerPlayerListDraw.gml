@@ -16,7 +16,7 @@ function NetPlayerListDraw(xpos, ypos) {
         if (player.first_ping) {
             ping_str = "(pinging)";
         } else {
-            ping_str = "(" + player.ping + "ms)"
+            ping_str = "(" + player.ping + " Delta)"
         }
         
         var faction = "";

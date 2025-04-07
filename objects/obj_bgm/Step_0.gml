@@ -4,11 +4,8 @@
 if (!gain_set && audio_group_is_loaded(audiogroup_bgm)) { 
 	
 	gain_set = true;
-	audio_group_set_gain(
-		audiogroup_bgm, 
-		max(0.03, OptionsGet("BGM Gain", true)), 
-		0
-	); 
+	SetGain(string(OptionsGet("BGM Gain", true)));
+	
 	audio_play_sound(bgm_set_list[current_track], 1, false);
 	DevConsoleLog("Now playing: " + audio_get_name(bgm_set_list[current_track]));
 	

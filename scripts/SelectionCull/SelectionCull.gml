@@ -13,9 +13,9 @@ function SelectionCull() {
         
     }
     
-    DevConsoleLog(team);
-    DevConsoleLog(units);
-    DevConsoleLog(military);
+    // DevConsoleLog(team);
+    // DevConsoleLog(units);
+    // DevConsoleLog(military);
     
     for (var i = 0; i < array_length(array); i ++) {
         
